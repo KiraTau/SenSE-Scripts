@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 
 # **************************** MODIFY THIS. ****************************
 # Set the Client ID + Secret to enable access to the user's data.
-CLIENT_ID = "23R4R2"
-CLIENT_SECRET = "1aa607e465e9306c30b9ebfeebf5bbcb"
+CLIENT_ID = ""
+CLIENT_SECRET = ""
 
 # Uncomment the data you want.
 data = "activities/heart"

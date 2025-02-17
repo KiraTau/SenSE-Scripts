@@ -168,3 +168,4 @@ slprj/
 
 # Data files that should not be publicly available.
 Data/
+python_fitbit/

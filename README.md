@@ -3,10 +3,7 @@ This repository holds scripts developed by Chukwuemeka Ike as part of his circad
 * Algorithms - scripts in these folders run the major algorithms
 * Support - combination of utility scripts, Simulink models, and data files that are commonly used across the algorithms
 
-
-However, the data need to run the example scripts are all located in the Data/ folder. 
-
-
+Note: The data need to run the example scripts are all located in a Data/ folder which Zidi Tao has access to. All requests for access can be directed to either him or Dr. Agung Julius.
 
 
 ## Algorithms

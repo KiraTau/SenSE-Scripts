@@ -1,7 +1,7 @@
-%create the folder
-folderName = 'Data';
+% Create the folder path strictly in the current directory
+folderName = fullfile(pwd, 'Data');
 
-% Check if the folder exists. 'dir' specifies we are looking for a directory.
+% Check if the folder exists at this exact absolute path
 if ~exist(folderName, 'dir')
     mkdir(folderName);
     fprintf('Folder "%s" created.\n', folderName);

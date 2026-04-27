@@ -1,8 +1,8 @@
 %This is the main function for the whole package
 %create the folder
-folderName = 'Results';
+folderName = fullfile(pwd, 'Results');
 
-% Check if the folder exists. 'dir' specifies we are looking for a directory.
+% Check if the folder exists at this exact absolute path
 if ~exist(folderName, 'dir')
     mkdir(folderName);
     fprintf('Folder "%s" created.\n', folderName);

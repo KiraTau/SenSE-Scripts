@@ -1,4 +1,15 @@
 %This is the main function for the whole package
+%create the folder
+folderName = 'Results';
+
+% Check if the folder exists. 'dir' specifies we are looking for a directory.
+if ~exist(folderName, 'dir')
+    mkdir(folderName);
+    fprintf('Folder "%s" created.\n', folderName);
+else
+    fprintf('Folder "%s" already exists.\n', folderName);
+end
+
 %Load the DLMO data, DLMO considered as 7 hours before minimum core body
 %temperature
 load("DLMO.mat")

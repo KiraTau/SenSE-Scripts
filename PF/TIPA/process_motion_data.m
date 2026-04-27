@@ -1,3 +1,14 @@
+%create the folder
+folderName = 'Data';
+
+% Check if the folder exists. 'dir' specifies we are looking for a directory.
+if ~exist(folderName, 'dir')
+    mkdir(folderName);
+    fprintf('Folder "%s" created.\n', folderName);
+else
+    fprintf('Folder "%s" already exists.\n', folderName);
+end
+
 %extract data from xlsx file and save it to mat
 test_subjet = 8;
 filename = strcat('Motion_NSF',num2str(test_subjet),'.xlsx');

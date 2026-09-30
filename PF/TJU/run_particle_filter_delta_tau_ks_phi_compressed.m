@@ -1,4 +1,4 @@
-function run_particle_filter_delta_tau_ks_compressed(subject, run, test, Q, R, I, t, option)
+function run_particle_filter_delta_tau_ks_phi_compressed(subject, run, test, Q, R, I, t, option)
 % Rensselaer Polytechnic Institute - Julius Lab
 % SenSE Project
 % Original Author - Chukwuemeka Osaretin Ike

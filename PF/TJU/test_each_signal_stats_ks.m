@@ -1,6 +1,9 @@
 % TJU experiments: subject-specific preparation, shared signal/trial loops.
 subjects = [7 8 1 5];
 options = 2:11;
+%2Actigraphy	3BPM	4Ave IBI (ms)	5Min IBI (ms)	6Max IBI (ms)	7SD
+%8RMSSD	9LF (ms2, 0.04-0.15 Hz)	10HF (ms2, 0.15-0.40 Hz)	11LF/HF	12
+%Wrist actigraphy
 run = 11;
 tests = 20:29;
 Q = [5e-3 5e-3 1e-3 1e-2 1e-2];
@@ -35,7 +38,6 @@ for subject = subjects
             heart = [heart; fill_time zeros(numel(fill_time),11)];
             t = heart(:,1);
             activity = wrist_clean(first_idx:end,2);
-            pf_function = @run_particle_filter_delta_tau_ks_phi_compressed;
     end
 
     wrist_light = activity_to_light(activity);
